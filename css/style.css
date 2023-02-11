@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    perspective: 700px ;
+    background-image: linear-gradient(rgba(226, 223, 223, 0.6),rgba(214, 207, 207, 0.65)),
+    url(../Images/pexels-digital-buggu-368685.jpg) 
+    ;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.header {
+    width: 80%;
+    height:100px;
+    border: 1px solid rgb(154, 6, 6);
+    border-radius: 10px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    color: white;
+    background-color: red;
+    box-shadow: 1px 2px 5px rgb(226, 226, 184);
+}
+
+.hname , .icon {
+    padding: auto ;
+    display: flex;
+}
+.icon {
+    font-size: 55px;
+    margin-left: 190px;
+    animation-name: iconLights;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes iconLights {
+    0% {
+        color: yellow;
+    }
+    25% {
+        color: rgb(10, 210, 224);
+    }
+    50% {
+        color: rgb(30, 209, 30);
+    }
+    100% {
+        color: blueviolet;
+    }
+}
+
+.hname {
+    margin-right: 290px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    height: 80px;
+    letter-spacing:5px;
+    font-style: italic;
+    margin-top: 15px;
+    text-shadow: 3px 3px 8px rgb(87, 87, 82);
+    ;
+}
+
+.contain {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+.side {
+    width:600px;
+    color: rgb(255, 254, 254);
+    letter-spacing: 10px;
+    transform: rotate(270deg);
+    left: -240px;
+    top: 255px;
+    position: absolute;
+    border-radius: 10px;
+    animation-name: sideLights;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    box-shadow: 1px 2px 5px rgb(255, 255, 255);
+
+}
+
+@keyframes sideLights {
+    0% {
+        background-color: rgb(33, 33, 32);
+    }
+    25% {
+        background-color: rgb(10, 210, 224);
+    }
+    50% {
+        background-color: rgb(30, 209, 30);
+    }
+    75% {
+        background-color: rgb(226, 43, 43);
+    }
+    100% {
+        background-color: blueviolet;
+    }
+}
+
+.side h1 {
+    margin-top:20px;
+    font-weight:bolder;
+    font-size: 45px;
+    font-style: normal;
+}
+
+.container {
+    transform-style: preserve-3d  ;
+    position: relative;
+    margin-left: 155px;
+    margin-top: 6px;
+    border: 2px solid rgb(233, 210, 175);
+    width: 1310px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgb(50, 48, 48);
+
+  
+
+}
+
+
+.animated-item {
+    width: 100px;
+    height: 90px;
+    margin: 10px 0;
+    position: relative;
+    transform-style: preserve-3d  ;
+    font-size: 55px;
+    padding: 15px;
+
+}
+
+.i-car {
+    display: block;
+}
+
+.item1 {
+    position: absolute;
+    animation-name: item1move;
+    animation-duration: 5.5s;
+    animation-delay: 1s;
+    color:rgb(44, 44, 143)
+}
+
+@keyframes item1move {
+    0% { left: 0;   }
+     
+
+     50% {  left:1230px;; }
+
+     
+     100% {   left: 0;   }
+
+}
+
+.item2 {
+    position: absolute;
+    animation-name: item1move;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    color:rgb(156, 34, 34)
+}
+
+.item3 {
+    position: absolute;
+    animation-name: item1move;
+    animation-duration: 12s;
+    animation-delay: 1s;
+  
+    color:rgb(25, 94, 25)
+}
+
+
+.item4 {
+    position: absolute;
+    animation-name: item1move;
+    animation-duration: 11s;
+    animation-delay: 1s;
+    color:rgb(127, 82, 10);
+    
+
+}
+
+.item5 {
+    position: absolute;
+    animation-name: item1move;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    color:rgb(9, 78, 97)
+}
+
+.item6 {
+    position: absolute;
+    animation-name: item1move;
+    animation-duration: 12s;
+    animation-delay: 1s;
+    color:rgb(81, 9, 97);
+    
+}
